@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%;height:100%">
+  <div class="mapbox">
     <div ref="map" id="map" :style="{width:width,height:height}">
       <!-- 自定义工具栏 -->
       <div class="tool-container">
@@ -125,6 +125,11 @@ export default {
 }
 </script>
 <style scoped>
+.mapbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo-large {
   width: 200px;
 }
